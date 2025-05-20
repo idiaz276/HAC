@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscríbete al Calendario del Harmonisa Aesthetic Congress</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5; /* Un gris muy claro y fresco para el fondo general */
+            color: #333333; /* Texto oscuro principal para legibilidad */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .container {
+            background-color: #FFFFFF; /* Contenedor principal blanco */
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #3E01B2; /* Morado Principal para el título */
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+        h2 {
+            font-size: 1.3em; /* Ligeramente más grande */
+            color: #3E01B2; /* Morado Principal para subtítulos */
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        h3 { /* Estilo añadido para los títulos de las instrucciones */
+            font-size: 1.1em;
+            color: #333333; /* Texto oscuro */
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            margin-bottom: 25px;
+        }
+        .button {
+            display: block;
+            background-color: #3E01B2; /* Morado Principal para botones principales */
+            color: #FFFFFF; /* Texto blanco */
+            padding: 14px 20px; /* Un poco más de padding vertical */
+            margin: 12px auto;
+            border: none;
+            border-radius: 6px; /* Bordes un poco más redondeados */
+            text-decoration: none;
+            font-size: 1.05em; /* Texto del botón un poco más grande */
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            cursor: pointer;
+            width: 90%;
+            max-width: 340px;
+            box-sizing: border-box;
+        }
+        .button:hover {
+            background-color: #2A017D; /* Morado un poco más oscuro al pasar el cursor */
+            transform: translateY(-2px); /* Efecto sutil al pasar el cursor */
+        }
+        /* Botón específico para Apple, usando el Verde Lima */
+        .button-apple {
+            background-color: #A0F917; /* Verde Lima */
+            color: #2c3e50; /* Texto oscuro para contraste con el verde lima */
+        }
+        .button-apple:hover {
+            background-color: #88D60F; /* Verde Lima un poco más oscuro */
+            color: #000000;
+        }
+        /* Botón para copiar, usando el Gris Azulado */
+        .button-copy {
+            background-color: #B2C6CD; /* Gris Azulado */
+            color: #2c3e50; /* Texto oscuro */
+        }
+        .button-copy:hover {
+            background-color: #9BADB3; /* Gris Azulado un poco más oscuro */
+        }
+        .link-display-container {
+            margin-top: 15px;
+        }
+        .link-display {
+            background-color: #FFFFFF; /* Fondo blanco */
+            border: 1px solid #B2C6CD; /* Borde con el Gris Azulado */
+            padding: 12px;
+            margin: 5px 0 15px 0;
+            word-wrap: break-word;
+            font-size: 0.9em;
+            color: #3E01B2; /* Enlace en Morado para que destaque */
+            border-radius: 4px;
+            text-align: left;
+        }
+        .instructions {
+            margin-top: 25px;
+            font-size: 0.9em;
+            text-align: left;
+            color: #555555; /* Texto de instrucciones un poco más suave */
+        }
+        .instructions ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+        .instructions li {
+            margin-bottom: 6px;
+        }
+        footer {
+            margin-top: 35px;
+            font-size: 0.9em;
+            color: #B2C6CD; /* Gris Azulado para el texto del pie de página */
+        }
+        footer strong { /* Para resaltar el nombre del organizador */
+            color: #3E01B2; /* Morado */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🗓️ Suscríbete al Calendario Oficial del Harmonisa Aesthetic Congress</h1>
+        <p>¡No te pierdas ninguna ponencia, taller o actividad especial! Ten la agenda actualizada directamente en tu calendario y recibe recordatorios.</p>
+
+        <h2>👇 Elige tu Opción para Suscribirte:</h2>
+        <div class="button-container">
+            <a href="https://calendar.google.com/calendar/render?cid=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fical%2Fharmonisaaestheticcongress%2540gmail.com%2Fprivate-1f55b7426eb44327eb33f1521fa83831%2Fbasic.ics" target="_blank" class="button">➕ Añadir a Google Calendar</a>
+            <a href="webcal://calendar.google.com/calendar/ical/harmonisaaestheticcongress%40gmail.com/private-1f55b7426eb44327eb33f1521fa83831/basic.ics" target="_blank" class="button button-apple">📱 Suscribirse (iPhone/iPad/Mac)</a>
+        </div>
+
+        <h2>⚙️ Para Outlook u Otros (Manual):</h2>
+        <div class="link-display-container">
+            <p style="margin-bottom:5px; color: #333333;">Copia este enlace y añádelo en tu app de calendario:</p>
+            <div class="link-display" id="icsLink">https://calendar.google.com/calendar/ical/harmonisaaestheticcongress%40gmail.com/private-1f55b7426eb44327eb33f1521fa83831/basic.ics</div>
+            <button onclick="copyToClipboard()" class="button button-copy">Copiar Enlace</button>
+        </div>
+
+        <div class="instructions">
+            <h3>Guía Rápida para Suscripción Manual:</h3>
+            <ul>
+                <li><strong>Outlook:</strong> Ve a "Calendario", luego "Agregar calendario" (o "Importar"), selecciona "Suscribirse desde la web" y pega el enlace.</li>
+                <li><strong>iPhone/iPad (si el botón no funciona):</strong> "Ajustes" > "Calendario" > "Cuentas" > "Añadir cuenta" > "Otra" > "Añadir calendario suscrito". Pega el enlace en "Servidor".</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Organizado por: <strong>COMUNICACIONES EFECTIVAS</strong></p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            const linkText = document.getElementById('icsLink').innerText;
+            navigator.clipboard.writeText(linkText).then(() => {
+                alert('¡Enlace copiado al portapapeles!');
+            }).catch(err => {
+                console.error('Error al copiar el enlace: ', err);
+                try {
+                    const textArea = document.createElement("textarea");
+                    textArea.value = linkText;
+                    textArea.style.position = "fixed"; 
+                    textArea.style.opacity = 0;
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    alert('¡Enlace copiado al portapapeles!');
+                } catch (e) {
+                    alert('Error al copiar. Por favor, copia el enlace manualmente.');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
